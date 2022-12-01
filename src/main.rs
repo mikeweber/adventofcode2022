@@ -10,7 +10,7 @@ fn main() {
         let input_path = args.get(2);
         let result = match prog_num {
             "1a" => day01::part_a(input_path),
-            // "1b" => ex01::part_b(input_path),
+            "1b" => day01::part_b(input_path),
             _ => {
                 println!("Could not recognize program {}", prog_num);
                 None
