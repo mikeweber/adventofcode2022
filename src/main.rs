@@ -13,6 +13,7 @@ fn main() {
             "1a" => day01::part_a(input_path),
             "1b" => day01::part_b(input_path),
             "2a" => day02::part_a(input_path),
+            "2b" => day02::part_b(input_path),
             _ => {
                 println!("Could not recognize program {}", prog_num);
                 None
