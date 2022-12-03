@@ -2,6 +2,7 @@ use std::env;
 
 mod utils;
 mod day01;
+mod day02;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -11,6 +12,7 @@ fn main() {
         let result = match prog_num {
             "1a" => day01::part_a(input_path),
             "1b" => day01::part_b(input_path),
+            "2a" => day02::part_a(input_path),
             _ => {
                 println!("Could not recognize program {}", prog_num);
                 None
