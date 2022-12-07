@@ -3,6 +3,7 @@ use std::env;
 mod utils;
 mod day01;
 mod day02;
+mod day03;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -14,6 +15,7 @@ fn main() {
             "1b" => day01::part_b(input_path),
             "2a" => day02::part_a(input_path),
             "2b" => day02::part_b(input_path),
+            "3a" => day03::part_a(input_path),
             _ => {
                 println!("Could not recognize program {}", prog_num);
                 None
